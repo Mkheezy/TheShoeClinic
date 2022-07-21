@@ -1,0 +1,289 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  border: dotted black 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 15px auto;
+}
+
+#title {
+  background-image: url("background-image.jpg");
+  background-color: #cccccc;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: cover;
+  color: white;
+}
+
+.container-fluid {
+  padding: 3% 5% 70%;
+}
+
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  text-align: left;
+}
+
+/* navigation bar */
+nav .navbar-nav li a {
+  color: white !important;
+}
+
+.navbar {
+  padding-bottom: 4.5rem;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.navbar-nav {
+  margin-left: 350px;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+nav .navbar-nav li a:hover {
+  color: #ff4c68 !important;
+}
+
+/* feature-section */
+#features {
+  padding: 3% 5%;
+  background-color: #FF7700;
+  position: relative;
+}
+
+.opertions {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 3%;
+}
+
+.icon {
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* pricing */
+#pricing {
+  padding: 3% 5%;
+  background-color: white;
+
+}
+
+.services {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-bottom: 3%
+
+}
+
+.cardimg {
+  height: 400px;
+}
+
+/* testimonials */
+
+#testimonials {
+  padding: 3% 3%;
+  background-color: #FF7700;
+  position: relative;
+  color: white;
+}
+.emoji{
+  font-size: 4rem;
+}
+
+.enquire{
+  color: white;
+  text-align: center;
+  font-size: 2 rem;
+
+}
+/* cta */
+
+#cta{
+  padding: 3% 5%;
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.cta-heading{
+  color: #FF7700;
+}
+
+.profile-img{
+  border-radius: 25%;
+  padding: 3% 5%;
+}
+
+.profile-text{
+  text-align: center;
+}
+
+#footer{
+  padding: 3% 3%;
+  background-color: #FF7700;
+  color: black;
+}
+
+.intro{
+
+  padding: 10% 3%;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  align-items: center !important;
+  text-align: center !important;
+  margin-left:35%;
+}
+
+.wrapper .icons {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icons:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icons:hover span,
+.wrapper .icons:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: green;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
